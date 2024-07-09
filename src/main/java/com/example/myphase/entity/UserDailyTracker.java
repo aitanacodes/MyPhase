@@ -1,13 +1,17 @@
 package com.example.myphase.entity;
 
-package com.example.myphase.entity;
+import com.example.myphase.enums.Mood;
+import com.example.myphase.enums.CyclePhase;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
-import javax.persistence.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Getter
+@Setter
 public class UserDailyTracker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,13 +29,4 @@ public class UserDailyTracker {
 
     private LocalDateTime date;
 
-    // Getters and Setters
-}
-
-enum Mood {
-    GOOD, TIRED, AVERAGE
-}
-
-enum CyclePhase {
-    MENSTRUATION, FOLLICULAR, OVULATORY, LUTEAL, ISCHEMIC
 }
