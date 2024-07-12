@@ -23,5 +23,11 @@ public class User {
     private LocalDate birthDate;
     private String country;
     private LocalDate lastLogin;
+    private String password;
+
+    public User(){
+        // Default no-argument constructor for JPA
+        // This constructor is intentionally left blank
+    }
 
 }
