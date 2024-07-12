@@ -20,3 +20,15 @@ a
 1src/main/java/com/example/myphase/enums/Mood.java,8\5\8517a8e5be193793794ef4376d1db7a53efdf6b3
 g
 7src/main/java/com/example/myphase/enums/CyclePhase.java,e\c\ec2c0c5437beb063e035a3706e6e106a8932638c
+n
+>src/main/java/com/example/myphase/DTO/UserRegistrationDto.java,2\4\24c783bcb4dd068eb3e59461bf7c473f5934f58c
+n
+>src/main/java/com/example/myphase/dto/UserRegistrationDto.java,4\d\4da8258fafd5607dd15192ddd3a565db791dd84b
+p
+@src/main/java/com/example/myphase/controller/AuthController.java,8\9\898023d00a7d68cc543471597e3536e8df51b15e
+j
+:src/main/java/com/example/myphase/service/UserService.java,5\5\55647a7c0987e68974cccde316ee3e39fc1001b0
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
