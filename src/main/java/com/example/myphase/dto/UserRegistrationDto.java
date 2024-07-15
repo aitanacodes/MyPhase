@@ -7,8 +7,6 @@ import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @Getter
 @Setter
 public class UserRegistrationDto {
@@ -31,5 +29,5 @@ public class UserRegistrationDto {
     private String country;
 
     @NotBlank(message = "Birthdate is required")
-    private LocalDate birthDate;
+    private String birthDate;
 }
