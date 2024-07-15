@@ -1,33 +1,36 @@
 package com.example.myphase.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.PrePersist;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
+
 @Entity
 @Getter
 @Setter
+@RequiredArgsConstructor
 public class User {
     @Id
-    @GeneratedValue
-    private UUID userId;
+    private String userId;
 
     private String firstName;
     private String lastName;
     private String email;
-    private LocalDate birthDate;
+    private Long birthDate;
     private String country;
     private LocalDate lastLogin;
     private String password;
 
-    public User(){
-        // Default no-argument constructor for JPA
-        // This constructor is intentionally left blank
+    @PrePersist
+    protected void onCreate() {
+        if (userId == null) {
+            userId = UUID.randomUUID().toString(); // Generar UUID como String
+        }
     }
-
 }
