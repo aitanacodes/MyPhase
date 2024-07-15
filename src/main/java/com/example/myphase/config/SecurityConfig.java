@@ -19,7 +19,8 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Solo desactivar CSRF si realmente es necesario
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/public/**").permitAll()
+                        .requestMatchers("/public/**",
+                                "/api/auth/register", "/swagger-ui/**", "/v3/api-docs/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form

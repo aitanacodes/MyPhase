@@ -5,6 +5,7 @@ import com.example.myphase.enums.CyclePhase;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
@@ -12,6 +13,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @Setter
+@RequiredArgsConstructor
 public class UserDailyTracker {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +27,7 @@ public class UserDailyTracker {
     private Mood mood;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "cycle_phase")
     private CyclePhase cyclePhase;
 
     private LocalDateTime date;
