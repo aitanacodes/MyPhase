@@ -34,3 +34,5 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 k
 ;src/main/java/com/example/myphase/config/OpenApiConfig.java,0\7\071dacf42688d0ad4cef4be6991d31113fa61539
+j
+:src/main/java/com/example/myphase/factory/UserFactory.java,6\e\6e3b25a3f6f615316efdcb4fc0bb3c48165ccbbf
