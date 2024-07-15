@@ -1,5 +1,6 @@
 package com.example.myphase.dto;
 
+
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -11,6 +12,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class UserRegistrationDto {
+
     @NotBlank(message = "First name is required")
     private String firstName;
 
@@ -28,5 +30,6 @@ public class UserRegistrationDto {
     @NotBlank(message = "Country is required")
     private String country;
 
+    @NotBlank(message = "Birthdate is required")
     private LocalDate birthDate;
 }
